@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
         Type: '{{textbox.type}}', required: '{{textbox.hasAttribute('required')}}',
         upper: '{{textbox.value.toUpperCase()}}'
         
-        <h2>Log <button (click)="log=''">Clear</button></h2>
+        
         <pre>{{log}}</pre>`
 ,  styles: ['h1{color: red;}'],
 
