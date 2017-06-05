@@ -1,0 +1,379 @@
+{  
+   "id":2,
+   "name":"General Knowledge Quiz",
+   "description":"General Knowledge Questions",
+   "config":{  
+      "shuffleQuestions":true,
+      "showPager":false,
+      "allowBack":true,
+      "autoMove":true
+   },
+   "questions":[  
+      {  
+         "id":1010,
+         "name":"Entomology is the science that studies",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Animals",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Birds",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Reptiles",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Insects",
+               "isAnswer":true
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1011,
+         "name":"For which of the following disciplines is Nobel Prize awarded?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Physics and Chemistry",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Physiology or Medicine",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Literature, Peace and Economics",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"All of the above",
+               "isAnswer":true
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"CTS",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1012,
+         "name":"Hitler party which came into power in 1933 is known as",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Labour Party",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Nazi Party",
+               "isAnswer":true
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Ku-Klux-Klan",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Democratic Party",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1013,
+         "name":"Movement of cell against concentration gradient is called",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"active transport",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"osmosis",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"diffusion",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"passive transport",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1014,
+         "name":"The great Victoria Desert is located in",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Australia",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"North America",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"United Kingdom",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Africa",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1015,
+         "name":"In which decade was the first solid state integrated circuit demonstrated?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"1940s",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"1950s",
+               "isAnswer":true
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"1960s",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"1970s",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1016,
+         "name":"Which scientist discovered the radioactive element radium?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Isaac Newton",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Marie Curie",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Albert Einstein",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Benjamin Franklin",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1017,
+         "name":"What is the name of the CalTech seismologist who invented the scale used to measure the magnitude of earthquakes?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Hiram Walker",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Charles Richter",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Giuseppe Mercalli",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Joshua Rumble",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1018,
+         "name":"The Centre for Cellular and Molecular Biology is situated at",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Patna",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Hyderabad",
+               "isAnswer":true
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Pune",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Chennai",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1019,
+         "name":"Ajanta-Ellora caves are situated near",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Aurangabad",
+               "isAnswer":true
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Patna",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Jaipur",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Ajmer",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      }
+   ]
+}

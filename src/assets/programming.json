@@ -1,0 +1,367 @@
+{  
+   "id":3,
+   "name":"Programming Quiz",
+   "description":"Programming Quiz contains basics of C language etc.",
+   "answers":[  
+      {  
+         "id":1010,
+         "name":"What is (void*)0?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"Representation of void pointer",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"Representation of NULL pointer",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"Error",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"None of the above",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1011,
+         "name":"If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":".",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"&",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"->",
+               "isAnswer":true
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"*",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1012,
+         "name":"The keyword used to transfer control from a function back to the calling function is",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"return",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"switch",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"goto",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"call",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1013,
+         "name":"Which of the following function sets first n characters of a string to a given character?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"strnset()",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"strset()",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"strcset()",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"setnstr()",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1014,
+         "name":"If the two strings are identical, then strcmp() function returns",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"False",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"True",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"1",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"0",
+               "isAnswer":true
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1015,
+         "name":"Which header file should be included to use functions like malloc() and calloc()?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"memory.h",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"string.h",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"stdlib.h",
+               "isAnswer":true
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"dos.h",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1016,
+         "name":"What function should be used to free the memory allocated by calloc() ?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"malloc(variable_name, 0)",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"free();",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"dealloc();",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"memalloc(variable_name, 0)",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1017,
+         "name":"Which of the following is the correct order of evaluation for the below expression? z = x + y * z / 4 % 2 - 1",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"= * / % + -",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"* / % + - =",
+               "isAnswer":true
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"/ * % - + =",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"* % / - + =",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1018,
+         "name":"Which bitwise operator is suitable for turning off a particular bit in a number?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"&& operator",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"| operator",
+               "isAnswer":false
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"& operator",
+               "isAnswer":true
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"|| operator",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      },
+      {  
+         "id":1019,
+         "name":"Which of the following statements should be used to obtain a remainder after dividing 3.14 by 2.1 ?",
+         "questionTypeId":1,
+         "options":[  
+            {  
+               "id":1055,
+               "questionId":1010,
+               "name":"rem = fmod(3.14, 2.1);",
+               "isAnswer":true
+            },
+            {  
+               "id":1056,
+               "questionId":1010,
+               "name":"rem = modf(3.14, 2.1);",
+               "isAnswer":false
+            },
+            {  
+               "id":1057,
+               "questionId":1010,
+               "name":"rem = 3.14 % 2.1;",
+               "isAnswer":false
+            },
+            {  
+               "id":1058,
+               "questionId":1010,
+               "name":"Remainder cannot be obtain in floating point division.",
+               "isAnswer":false
+            }
+         ],
+         "questionType":{  
+            "id":1,
+            "name":"Multiple Choice",
+            "isActive":true
+         }
+      }
+   ]
+}
