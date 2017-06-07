@@ -18,10 +18,10 @@ export class QuizComponent implements OnInit {
   config: QuizConfig = {
     'allowBack': false,
     'allowReview': true,
-    'autoMove': false,
-    'duration': 0,
+    'autoMove': false,  // if true, it will move to next question automatically when answered.
+    'duration': 0,  // indicates the time in which quiz needs to be completed. 0 means unlimited.
     'pageSize': 10,
-    'requiredAll': false,
+    'requiredAll': false,  // indicates if you must answer all the questions before submitting.
     'richText': false,
     'shuffleQuestions': false,
     'shuffleOptions': false,
@@ -47,7 +47,6 @@ export class QuizComponent implements OnInit {
   loadQuiz(quizName: string) {
     this.quizService.get(quizName).subscribe(res => {
       this.quiz = new Quiz(res); //json to model
-      
     });
     this.mode = 'quiz';
   }
@@ -81,3 +80,4 @@ export class QuizComponent implements OnInit {
     this.mode = 'result';
   }
 }
+ 

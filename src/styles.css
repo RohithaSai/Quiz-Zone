@@ -1,8 +1,11 @@
 h1{
     color:#740808;
     font-weight:normal;
+    background: beige;
+    
 }
-h2{
+h2{ 
+    background: beige;
     font-weight:normal;
 }
 
@@ -37,12 +40,14 @@ div.review > div {
 
 .answered {
     border:1px solid #aaeeaa;
+    background-color: #aaeeaa;
     margin:2px 0;
     padding:12px;
 }
 
 .not-answered {
     border:1px solid #eeaaaa;
+    background-color: #eeaaaa;
     margin:2px 0;
     padding:12px;
 }
@@ -100,3 +105,4 @@ div.review > div {
         padding: 6px;
     }
 }
+

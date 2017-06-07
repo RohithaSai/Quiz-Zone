@@ -2,7 +2,7 @@
    "id":3,
    "name":"Programming Quiz",
    "description":"Programming Quiz contains basics of C language etc.",
-   "answers":[  
+   "questions":[  
       {  
          "id":1010,
          "name":"What is (void*)0?",
