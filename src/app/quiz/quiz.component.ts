@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Observable, Subscription } from 'rxjs/Rx'
 import { QuizService } from '../services/quiz.service';
 import { HelperService } from '../services/helper.service';
 import { Option, Question, Quiz, QuizConfig } from '../models/index';
@@ -11,6 +11,9 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
+  ticks = 0;
+  secondsDisplay: number = 0;
+  sub: Subscription;
   quizes: any[];
   quiz: Quiz = new Quiz(null);
   mode = 'quiz';
@@ -36,21 +39,53 @@ export class QuizComponent implements OnInit {
     count: 1
   };
 
+
+
+
+
+
+
   constructor(private quizService: QuizService) { }
 
   ngOnInit() {
     this.quizes = this.quizService.getAll();
     this.quizName = this.quizes[0].id;
     this.loadQuiz(this.quizName);
+    this.startTimer();
   }
 
   loadQuiz(quizName: string) {
+
     this.quizService.get(quizName).subscribe(res => {
       this.quiz = new Quiz(res); //json to model
     });
     this.mode = 'quiz';
   }
+  private startTimer() {
 
+        let timer = Observable.timer(1, 1000);
+        this.sub = timer.subscribe(
+            t => {
+                this.ticks = t;
+
+                this.secondsDisplay = this.getSeconds(this.ticks);
+
+            }
+        );
+    }
+
+    private getSeconds(ticks: number) {
+      let seconds = 60;
+      if (this.ticks > seconds) {
+        this.onSubmit();
+
+      }
+        return this.pad(ticks % 60);
+    }
+
+    private pad(digit: any) {
+       return digit <= 9 ? '0' + digit : digit;
+   }
   get filteredQuestions() {
     return (this.quiz.questions) ?
       this.quiz.questions.slice(this.pager.index, this.pager.index + this.pager.size) : [];
@@ -61,7 +96,7 @@ export class QuizComponent implements OnInit {
       question.options.forEach((x) => { if (x.id !== option.id) x.selected = false; });  //checkbox selection
     }
 
-    
+
   }
 
 
@@ -72,7 +107,7 @@ export class QuizComponent implements OnInit {
   isCorrect(question: Question) {
     return question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
   };
- 
+
   onSubmit() {
     let answers = [];
     this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
@@ -80,4 +115,3 @@ export class QuizComponent implements OnInit {
     this.mode = 'result';
   }
 }
- 

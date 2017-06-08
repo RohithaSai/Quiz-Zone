@@ -8,4 +8,6 @@ import { QuizComponent } from './quiz/quiz.component'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+
+}

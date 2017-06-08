@@ -9,7 +9,8 @@ import { QuizComponent } from './quiz/quiz.component';
 @NgModule({
   declarations: [
     AppComponent,
-    QuizComponent
+    QuizComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -20,4 +21,3 @@ import { QuizComponent } from './quiz/quiz.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

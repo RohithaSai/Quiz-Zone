@@ -1,10 +1,12 @@
+
+
 h1{
     color:#740808;
     font-weight:normal;
     background: beige;
-    
+
 }
-h2{ 
+h2{
     background: beige;
     font-weight:normal;
 }
@@ -30,7 +32,7 @@ hr{
         height:22px;
         width:22px;
     }
-    
+
 div.review{
     text-align:center;
 }
@@ -58,7 +60,7 @@ div.review > div {
     padding:6px;
 }
 
-    
+
 /* Create Quiz Styles */
 .create-quiz .question {
     text-align:left;
@@ -87,9 +89,27 @@ div.review > div {
     margin-bottom:0;
     padding:0;
     width:20px;
-    -webkit-appearance:checkbox;    
+    -webkit-appearance:checkbox;
+}
+.quiz {
+  animation-duration: 10s;
+  animation-name: slidein;
+  background-color: #dfff80;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+
+}
 @media only screen and (max-width: 480px) {
     h1,.h1{
         font-size:22px;
@@ -105,4 +125,3 @@ div.review > div {
         padding: 6px;
     }
 }
-

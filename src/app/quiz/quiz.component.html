@@ -1,20 +1,22 @@
-
+<body>
 <div>
     <h1 class="quiz">Quiz Zone</h1>
 </div>
-<div>
+
   <div>
     Select Quiz:
     <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
         <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
       </select>
+
   </div>
-</div>
+
+{{(secondsDisplay) && (secondsDisplay <= 59) ? secondsDisplay : '00'}} <br/>
 <div id="quiz">
   <h3 class="text-sm-center">{{quiz.name}}</h3>
-  <hr />
+  <hr/>
+  <div *ngIf="mode == 'quiz'">
 
-  <div *ngIf="mode=='quiz' && quiz">
     <div *ngFor="let question of filteredQuestions;let index=index">
       <h2>{{index + 1}}. <span [innerHTML]="question.name"></span></h2>
       <div class="row text-left options">
@@ -27,8 +29,18 @@
           </div>
         </div>
       </div>
+
     </div>
- </div>
+
+  </div>
+
+</div>
+
+<div *ngIf="mode!='result'">
+<button class="btn btn-default" *ngIf="mode!='quiz'" (click)="mode = 'quiz'">Quiz</button>
+<button class="btn btn-default" *ngIf="mode=='quiz' || quiz" (click)="mode = 'review'">Review</button>
+<button class="btn btn-default" (click)="onSubmit();">Submit</button>
+</div>
 <div class="row review" *ngIf="mode=='review'">
     <div class="col-sm-4" *ngFor="let question of quiz.questions; let index = index;">
       <div (click)="goTo(index)" class="{{ isAnswered(question) == 'Answered'? 'answered': 'not-answered' }}">{{index + 1}}. {{ isAnswered(question) }}</div>
@@ -43,24 +55,18 @@
         <div class="row">
           <div class="col-md-6" *ngFor="let Option of question.options">
             <input id="{{Option.id}}" type="checkbox" disabled="disabled" [(ngModel)]="Option.selected" /> {{Option.name}}
+
           </div>
+
         </div>
-        <div class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</div>
+
+      <div class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</div>
       </div>
+
     </div>
     <h4 class="alert alert-info text-sm-center">You may close this window now.</h4>
   </div>
   <hr />
-  <div *ngIf="mode!='result'">
-    <button class="btn btn-default" *ngIf="mode!='quiz'" (click)="mode = 'quiz'">Quiz</button>
-    <button class="btn btn-default" (click)="mode = 'review'">Review</button>
-    <button class="btn btn-default" (click)="onSubmit();">Submit</button>
-  </div>
-</div>
 
 
-  
-
-
-
- 
+</body>
